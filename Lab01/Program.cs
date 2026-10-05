@@ -88,18 +88,28 @@
 // Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
 
 
-//Задание 1.
+// //Задание 1.
+// Console.WriteLine();
+
+// const int MonthsInSemester = 4;
+
+// int scholarship = 6500;
+// int monthlyExpenses = 1500;
+
+// int monthlyBalance = scholarship - monthlyExpenses;
+// int semesterBalance = monthlyBalance * MonthsInSemester;
+
+// Console.WriteLine($"Стипендия: {scholarship} руб.");
+// Console.WriteLine($"Расходы на еду и проезд в месяц: {monthlyExpenses} руб.");
+// Console.WriteLine($"Останется к концу месяца: {monthlyBalance} руб.");
+// Console.WriteLine($"За семестр ({MonthsInSemester} мес.) останется: {semesterBalance} руб.");
+
+//Задание 3
+
 Console.WriteLine();
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int fullLessons = totalMinutes / minutesPerLesson;
+int remainingMinutes = totalMinutes % minutesPerLesson;
 
-const int MonthsInSemester = 4;
-
-int scholarship = 6500;
-int monthlyExpenses = 1500;
-
-int monthlyBalance = scholarship - monthlyExpenses;
-int semesterBalance = monthlyBalance * MonthsInSemester;
-
-Console.WriteLine($"Стипендия: {scholarship} руб.");
-Console.WriteLine($"Расходы на еду и проезд в месяц: {monthlyExpenses} руб.");
-Console.WriteLine($"Останется к концу месяца: {monthlyBalance} руб.");
-Console.WriteLine($"За семестр ({MonthsInSemester} мес.) останется: {semesterBalance} руб.");
+Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {remainingMinutes} минут");
